@@ -4,15 +4,16 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Home from './pages/home'
 import Navbar from './Component/navbar'
 import Women from './pages/Women'
+import Men from './pages/Men'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
-      <Navbar/>
+      <Navbar className="Navbar"/>
         <Routes>
           <Route path='/home' element={<Home />}></Route>
+          <Route path='/men' element={<Men/>}></Route>
           <Route path='/women' element={<Women/>}></Route>
         </Routes>
     </BrowserRouter>
