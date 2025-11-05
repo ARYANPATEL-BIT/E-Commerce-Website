@@ -1,4 +1,5 @@
 import react from 'react';
+import Navbar from '../Component/navbar'
 
 function Men(){
     return(

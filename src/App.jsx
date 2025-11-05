@@ -5,6 +5,7 @@ import Home from './pages/home'
 import Navbar from './Component/navbar'
 import Women from './pages/Women'
 import Men from './pages/Men'
+import Cart from  './pages/Cart'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Route path='/home' element={<Home />}></Route>
           <Route path='/men' element={<Men />}></Route>
           <Route path='/women' element={<Women />}></Route>
+          <Route path='/cart' element={<Cart />}></Route>
         </Routes>
     </BrowserRouter>
   )
