@@ -1,16 +1,16 @@
 import react from 'react';
-import {useNavigate} from 'react-router-dom'
+import {Link} from 'react-router-dom'
+import "./navbar.css"
 
 function Navbar(){
 
-    const navigate = useNavigate()
 
     return (
         <>
-        <div>
-            <button onClick={() => navigate('/home')}>Home</button>
-            <button onClick={()=> navigate('/men')}>Men</button>
-            <button onClick={()=> navigate('/women')}>women</button>
+        <div className="navbar">
+           <Link to="/home">Home</Link>
+           <Link to="/men">Men</Link>
+           <Link to="/women">Women</Link>
         </div>
         </>
     )
